@@ -28,6 +28,30 @@ public:
 
 };
 
+class Cat :Animal<std::string>
+{
+	std::string value;
+public:
+	void Voice() override
+	{
+		value = "Miay";
+		std::cout << value << "\n";
+	}
+
+};
+
+class Crow :Animal<std::string>
+{
+	std::string value;
+public:
+	void Voice() override
+	{
+		value = "Kaaar";
+		std::cout << value << "\n";
+	}
+
+};
+
 
 
 int main()
